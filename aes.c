@@ -17,13 +17,13 @@
 #define likely(x) (x)
 #define unlikely(x) (x)
 #endif
-
+ 
 #ifdef __cplusplus
 #define __restrict__ __restrict
 #else
 #define __restrict__ restrict
 #endif
-
+ 
 #ifdef __cplusplus
 #define __noexcept noexcept
 #define __const_noexcept const noexcept
@@ -48,8 +48,7 @@
 
 typedef uint8_t byte;
 
-/* ===================== PRNG (Mersenne Twister) ===================== */
-#define PRNG_N 624
+ #define PRNG_N 624
 #define PRNG_M 397
 #define PRNG_MATRIX_A 0x9908b0dfUL
 #define PRNG_UPPER_MASK 0x80000000UL
